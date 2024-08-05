@@ -1,5 +1,23 @@
 <html>
+  <head>
+    <link rel="stylesheet" href="../public/styles.css" />
+  </head>
   <body>
     <%= title %>
+    <form class="flex-form" method="post" action="/new">
+      <p>
+        <label for="authorsName">Author's Name:</label>
+        <input type="text" id="authorsName" name="authorsName" />
+      </p>
+      <br />
+      <p>
+        <label for="messageText">Message Text:</label>
+        <textarea name="messageText" id="messageText"></textarea>
+      </p>
+      <br />
+      <p>
+        <input type="submit" value="Submit" />
+      </p>
+    </form>
   </body>
 </html>
