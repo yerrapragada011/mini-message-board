@@ -16,5 +16,5 @@ app.use('/', indexRouter)
 app.use('/new', newRouter)
 app.use('/messageDetail', messageDetailRouter)
 
-const PORT = 3000
-app.listen(PORT, () => console.log(`listening on port ${PORT}!`))
+const PORT = process.env.PGPORT || 3000
+app.listen(PORT, '0.0.0.0', () => console.log(`listening on port ${PORT}!`))
