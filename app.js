@@ -12,7 +12,7 @@ app.set('view engine', 'ejs')
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-app.use('/', indexRouter.router)
+app.use('/', indexRouter)
 app.use('/new', newRouter)
 app.use('/messageDetail', messageDetailRouter)
 
